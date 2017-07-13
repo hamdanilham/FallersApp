@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fallersapp.fallersapp.AddPlanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp">
+
+            <EditText
+                android:id="@+id/et_email_signup"
+                android:layout_below="@+id/image_logo_login"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:hint="Plan Name"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/email_signup"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="15dp"
+                android:inputType="textEmailAddress" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
