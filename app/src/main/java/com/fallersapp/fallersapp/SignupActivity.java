@@ -1,7 +1,10 @@
 package com.fallersapp.fallersapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.fallersapp.fallersapp.base.BaseActivity;
@@ -11,12 +14,23 @@ import butterknife.ButterKnife;
 
 public class SignupActivity extends BaseActivity {
 
+    @BindView(R.id.btn_signup_btn)
+    Button buttonSignup;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
         ButterKnife.bind(this);
         setToolbar(true);
+
+        buttonSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SignupActivity.this, PlanActivity.class);
+                startActivity(intent);
+            }
+        });
 
 //        textToolbarTitle.setText("Register");
 

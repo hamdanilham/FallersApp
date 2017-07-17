@@ -23,8 +23,7 @@
             android:paddingRight="70dp">
 
             <EditText
-                android:id="@+id/et_email_signup"
-                android:layout_below="@+id/image_logo_login"
+                android:id="@+id/et_plan_name"
                 android:layout_width="match_parent"
                 android:textColor="@color/colorAccent"
                 android:layout_height="wrap_content"
@@ -34,6 +33,132 @@
                 android:layout_marginTop="20dp"
                 android:drawablePadding="15dp"
                 android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/et_location"
+                android:layout_below="@+id/et_plan_name"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:hint="Location"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/email_signup"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="15dp"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/et_descrpition"
+                android:layout_below="@+id/et_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp"
+                android:textColor="@color/colorAccent"
+                android:hint="Description"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/email_signup"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                android:drawablePadding="15dp"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/et_list_item"
+                android:layout_below="@+id/et_descrpition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:hint="Description"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/email_signup"
+                android:drawableRight="@drawable/ic_menu_send"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                android:drawablePadding="15dp"
+                android:inputType="textEmailAddress" />
+
+            <RelativeLayout
+                android:layout_below="@+id/et_list_item"
+                android:id="@+id/rl_list_item"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_list_home"
+                    android:scrollbars="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_dep_time"
+                android:layout_below="@+id/rl_list_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:hint="Departure Time"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/email_signup"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                android:drawablePadding="15dp"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/et_arr_time"
+                android:layout_below="@+id/et_dep_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:hint="Arrival Time"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/email_signup"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                android:drawablePadding="15dp"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/et_family"
+                android:layout_below="@+id/et_arr_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:hint="Family"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/email_signup"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                android:drawablePadding="15dp"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/et_budget"
+                android:layout_below="@+id/et_family"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:hint="Budget"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/email_signup"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                android:drawablePadding="15dp"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_below="@+id/et_budget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="15dp"
+                android:textColor="@color/colorBackground"
+                android:backgroundTint="@color/colorAccent"
+                android:text="Add"/>
+
 
         </RelativeLayout>
 

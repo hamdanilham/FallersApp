@@ -43,6 +43,10 @@
             android:name=".AddPlanActivity"
             android:label=""
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".PickLocation"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>

@@ -36,4 +36,12 @@ dependencies {
     compile 'com.jakewharton:butterknife:8.7.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
 
+    //Location
+    compile 'com.google.android.gms:play-services-maps:9.0.0'
+    compile 'com.google.android.gms:play-services-location:9.0.0'
+    compile 'com.google.android.gms:play-services-gcm:9.0.0'
+
+    //search
+    compile 'com.github.renaudcerrato:FloatingSearchView:1.0.1'
+
 }
