@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.fallersapp.fallersapp.SignupActivity">
+    tools:context="com.fallersapp.fallersapp.signup.SignupActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
                 android:layout_height="150dp"
                 app:srcCompat="@drawable/title"
                 android:layout_centerHorizontal="true"/>
-            <EditText
+            <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/et_email_signup"
                 android:layout_below="@+id/image_logo_login"
                 android:layout_width="match_parent"
@@ -41,7 +41,7 @@
                 android:layout_marginTop="20dp"
                 android:drawablePadding="15dp"
                 android:inputType="textEmailAddress" />
-            <EditText
+            <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/et_username_signup"
                 android:textColor="@color/colorAccent"
                 android:layout_below="@+id/et_email_signup"
@@ -54,7 +54,7 @@
                 android:layout_marginTop="20dp"
                 android:drawablePadding="15dp"
                 android:inputType="textPassword" />
-            <EditText
+            <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/et_password_signup"
                 android:textColor="@color/colorAccent"
                 android:layout_below="@+id/et_username_signup"
@@ -67,7 +67,7 @@
                 android:layout_marginTop="20dp"
                 android:drawablePadding="15dp"
                 android:inputType="textPassword" />
-            <EditText
+            <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/et_repassword_signup"
                 android:textColor="@color/colorAccent"
                 android:layout_below="@+id/et_password_signup"

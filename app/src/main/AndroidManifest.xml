@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fallersapp.fallersapp">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,12 +16,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
-            android:name=".LoginActivity"
+            android:name=".login.LoginActivity"
             android:label="Login"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
         <activity
-            android:name=".SplashActivity"
+            android:name=".splash.SplashActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,31 +31,52 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".SignupActivity"
+            android:name=".signup.SignupActivity"
             android:label=""
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <!--<meta-data-->
                 <!--android:name="android.support.PARENT_ACTIVITY"-->
                 <!--android:value="com.fallersapp.fallersapp.LoginActivity" />-->
         </activity>
+
         <activity
             android:name=".home.MainActivity"
             android:label=""
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
+
         <activity
-            android:name=".PlanActivity"
+            android:name=".plan.PlanActivity"
             android:label=""
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
         <activity
-            android:name=".AddPlanActivity"
+            android:name=".plan.AddPlanActivity"
             android:label=""
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
         <activity
-            android:name=".PickLocation"
+            android:name=".plan.PickLocation"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+
+            </activity>
+
+        <activity
+            android:name=".plan.DetailPlan"
             android:label=""
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".bookmark.BookmarkActivity"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD7RkzYBvTXe7x2g1bmcYlvmpVD1vNP_tI"/>
     </application>
 
 </manifest>

@@ -5,6 +5,10 @@
     <color name="colorAccent">#5cace2</color>
     <color name="colorBackground">#ffffff</color>
     <color name="colorGrey">#262626</color>
+    <color name="text_content">#8d8d8d</color>
+    <color name="window_background">#F2F2F2</color>
+
+    <color name="text_grey">#aaaaaa</color>
 
     <color name="backgroundNav">#1e8bc3</color>
 

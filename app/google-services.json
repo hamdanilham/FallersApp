@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "668013577794",
+    "firebase_url": "https://fallersapp.firebaseio.com",
+    "project_id": "fallersapp",
+    "storage_bucket": "fallersapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668013577794:android:b6c5763ea5afdd5f",
+        "android_client_info": {
+          "package_name": "com.fallersapp.fallersapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668013577794-b2a3sm5qvt00hv7getr0vfb9ub2774gd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fallersapp.fallersapp",
+            "certificate_hash": "24ce5a372e6e3297b2f5e638d9737d944ea5a82a"
+          }
+        },
+        {
+          "client_id": "668013577794-a19ehjsujbclqghvc30isodnej9g2mfv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fallersapp.fallersapp",
+            "certificate_hash": "b8033016372492b321b69d5760606217ef5878cc"
+          }
+        },
+        {
+          "client_id": "668013577794-r3dp4v8nivfhbtiufo7jgrtoqqvhfvhj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnehDA4IHY145WUGks1I4tZ7b_ypqAUO8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668013577794-r3dp4v8nivfhbtiufo7jgrtoqqvhfvhj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

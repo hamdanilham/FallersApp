@@ -22,7 +22,7 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.fallersapp.fallersapp.PlanActivity;
+import com.fallersapp.fallersapp.plan.PlanActivity;
 import com.fallersapp.fallersapp.R;
 
 import butterknife.BindView;

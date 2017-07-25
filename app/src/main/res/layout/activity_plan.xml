@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context="com.fallersapp.fallersapp.PlanActivity"
+    tools:context="com.fallersapp.fallersapp.plan.PlanActivity"
     android:orientation="vertical">
 
         <include
@@ -42,8 +42,5 @@
                     android:textColor="@color/colorBackground" />
 
             </LinearLayout>
-
-
-
 
 </LinearLayout>

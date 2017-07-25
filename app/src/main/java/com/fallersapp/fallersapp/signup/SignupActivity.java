@@ -1,4 +1,4 @@
-package com.fallersapp.fallersapp;
+package com.fallersapp.fallersapp.signup;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.fallersapp.fallersapp.R;
 import com.fallersapp.fallersapp.base.BaseActivity;
+import com.fallersapp.fallersapp.plan.PlanActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

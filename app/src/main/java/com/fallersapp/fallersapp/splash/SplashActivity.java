@@ -1,10 +1,13 @@
-package com.fallersapp.fallersapp;
+package com.fallersapp.fallersapp.splash;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+
+import com.fallersapp.fallersapp.R;
+import com.fallersapp.fallersapp.login.LoginActivity;
 
 public class SplashActivity extends AppCompatActivity {
 

@@ -34,7 +34,7 @@ public class BaseActivity extends AppCompatActivity {
         setTitle("");
 
         if(isHaveArrow){
-            toolbar.setNavigationIcon(R.drawable.ic_chevron_left);
+            toolbar.setNavigationIcon(R.drawable.ic_back);
             toolbar.setNavigationOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

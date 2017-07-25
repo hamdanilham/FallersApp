@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.fallersapp.fallersapp.LoginActivity">
+    tools:context="com.fallersapp.fallersapp.login.LoginActivity">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -31,6 +31,12 @@
             android:drawableLeft="@drawable/login_email_icon"
             android:layout_marginTop="20dp"
             android:drawablePadding="15dp"
+            app:met_baseColor="@color/colorAccent"
+            app:met_floatingLabel="normal"
+            app:met_textColor="@color/colorAccent"
+            app:met_textColorHint="@color/text_grey"
+            app:met_singleLineEllipsis="true"
+            app:met_floatingLabelTextSize="14dp"
             android:inputType="textEmailAddress" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
@@ -40,6 +46,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
+            app:met_floatingLabel="normal"
+            app:met_textColor="@color/colorAccent"
+            app:met_textColorHint="@color/text_grey"
+            app:met_baseColor="@color/colorAccent"
+            app:met_singleLineEllipsis="true"
+            app:met_floatingLabelTextSize="14dp"
             android:drawableLeft="@drawable/login_icon_password"
             android:typeface="serif"
             android:textSize="18sp"
@@ -69,5 +81,27 @@
             android:layout_marginTop="20dp"
             android:textSize="20sp"
             android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:layout_below="@+id/text_sign_up">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:src="@drawable/google_"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/facebook"
+                android:layout_weight="1"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
     </RelativeLayout>
 </ScrollView>

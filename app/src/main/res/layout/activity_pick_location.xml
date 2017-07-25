@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -9,23 +10,30 @@
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-    <com.mypopsy.widget.FloatingSearchView
-        android:id="@+id/search"
+
+    <fragment
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="16dp"
-        android:paddingRight="8dp"
-        android:paddingLeft="8dp"
-        android:background="#90000000"
-        android:hint="Search"
-        app:logo="@drawable/ic_menu_send"
-        app:fsv_menu="@menu/activity_main_drawer"/>
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
 
-    <com.google.android.gms.maps.MapView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-
-    </com.google.android.gms.maps.MapView>
+    <!--<fragment-->
+        <!--android:name="com.google.android.gms.maps.MapFragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--app:cameraBearing="112.5"-->
+        <!--app:cameraTargetLat="-33.796923"-->
+        <!--app:cameraTargetLng="150.922433"-->
+        <!--app:cameraTilt="30"-->
+        <!--app:cameraZoom="13"-->
+        <!--app:mapType="normal"-->
+        <!--app:uiRotateGestures="true"-->
+        <!--app:uiScrollGestures="true"-->
+        <!--app:uiZoomControls="true"-->
+        <!--app:uiZoomGestures="true"-->
+        <!--android:id="@+id/fragment_map" />-->
 
 
 </RelativeLayout>
