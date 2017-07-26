@@ -13,6 +13,8 @@ import android.widget.TextView;
 import com.fallersapp.fallersapp.plan.PickLocation;
 import com.fallersapp.fallersapp.R;
 import com.fallersapp.fallersapp.base.BaseActivity;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 //import com.google.firebase.database.DatabaseReference;
 //import com.google.firebase.database.FirebaseDatabase;
 
