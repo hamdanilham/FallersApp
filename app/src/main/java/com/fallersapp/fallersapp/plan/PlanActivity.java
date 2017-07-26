@@ -35,6 +35,7 @@ public class PlanActivity extends BaseActivity{
             public void onClick(View view) {
                 Intent intent = new Intent(PlanActivity.this, AddPlanActivity.class);
                 startActivity(intent);
+//                FirebaseAuth.getInstance().signOut();
             }
         });
 

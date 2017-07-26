@@ -15,6 +15,7 @@ import com.fallersapp.fallersapp.R;
 import com.fallersapp.fallersapp.plan.PlanActivity;
 import com.fallersapp.fallersapp.signup.SignupActivity;
 import com.fallersapp.fallersapp.home.MainActivity;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
@@ -35,9 +36,13 @@ public class LoginActivity extends AppCompatActivity {
     EditText mEmailSignIn;
     @BindView(R.id.et_password_login)
     EditText mPasswordSignIn;
+    @BindView(R.id.google_sign_in)
+    Button buttonGoogleSignIn;
 //
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
+
+    GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestIdToken(getString(R.string.default_web_client_id)).requestEmail().build();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +80,13 @@ public class LoginActivity extends AppCompatActivity {
                 startSignIn();
             }
         });
+
+        buttonGoogleSignIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                googleSign();
+            }
+        });
     }
 
     @Override
@@ -83,7 +95,7 @@ public class LoginActivity extends AppCompatActivity {
         mAuth.addAuthStateListener(mAuthListener);
     }
 
-    public void startSignIn() {
+    private void startSignIn() {
         String email = mEmailSignIn.getText().toString();
         String password = mPasswordSignIn.getText().toString();
 
@@ -100,4 +112,6 @@ public class LoginActivity extends AppCompatActivity {
             });
         }
     }
+
+
 }
