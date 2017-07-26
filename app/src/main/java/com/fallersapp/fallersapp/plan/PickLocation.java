@@ -21,6 +21,7 @@ import butterknife.ButterKnife;
 public class PickLocation extends BaseActivity implements OnMapReadyCallback{
     MapView mapView;
     GoogleMap map;
+    double latitude,longitude;
 
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
