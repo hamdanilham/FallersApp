@@ -9,6 +9,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.LinearLayoutManager;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -19,35 +20,50 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v7.widget.RecyclerView;
+import android.widget.AdapterView;
+import android.widget.GridView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.daimajia.slider.library.Animations.DescriptionAnimation;
+import com.daimajia.slider.library.Indicators.PagerIndicator;
+import com.daimajia.slider.library.SliderLayout;
+import com.daimajia.slider.library.SliderTypes.BaseSliderView;
+import com.daimajia.slider.library.SliderTypes.DefaultSliderView;
+import com.daimajia.slider.library.SliderTypes.TextSliderView;
+import com.daimajia.slider.library.Tricks.ViewPagerEx;
+import com.fallersapp.fallersapp.base.BaseActivity;
+import com.fallersapp.fallersapp.login.LoginActivity;
 import com.fallersapp.fallersapp.plan.PlanActivity;
 import com.fallersapp.fallersapp.R;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-    @BindView(R.id.widget_toolbar)
-    Toolbar widgetToolbar;
+public class MainActivity extends BaseActivity implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener{
 
-    @BindView(R.id.drawer_layout)
-    DrawerLayout drawerLayout;
+    @BindView(R.id.slider)
+    SliderLayout sliderLayout;
 
-    @BindView(R.id.nav_view)
-    NavigationView navigationView;
+    @BindView(R.id.custom_indicator)
+    PagerIndicator pagerIndicator;
 
-    @BindView(R.id.rv_list_home)
-    RecyclerView recyclerViewListHome;
+    @BindView(R.id.gridMenu)
+    GridView gridMenu;
 
-    @BindView(R.id.text_toolbar_title)
-    TextView tvToolbarTitle;
+    private SliderLayout mDemoSlider;
 
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private LinearLayoutManager mLinearLayoutManager;
     ActionBarDrawerToggle toggle;
+
+    ArrayList<mMenu> arrayMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,122 +71,135 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        setSupportActionBar(widgetToolbar);
-        tvToolbarTitle.setText("Home");
+        setToolbar(true);
 
-        //recycle view
-        recyclerViewListHome.setHasFixedSize(true);
-        mLinearLayoutManager = new LinearLayoutManager(this);
-        recyclerViewListHome.setLayoutManager(mLinearLayoutManager);
+        mDemoSlider = (SliderLayout)findViewById(R.id.slider);
 
-        mAdapter = new com.fallersapp.fallersapp.home.MainAdapter();
-        recyclerViewListHome.setAdapter(mAdapter);
+        arrayMenu = new ArrayList<>();
+        arrayMenu.add(new mMenu("Plan", R.drawable.ic_plans));
+        arrayMenu.add(new mMenu("Map", R.drawable.ic_plan));
+        arrayMenu.add(new mMenu("History", R.drawable.ic_history));
+        arrayMenu.add(new mMenu("Profile", R.drawable.ic_profile));
+        arrayMenu.add(new mMenu("About", R.drawable.ic_info));
+        arrayMenu.add(new mMenu("Logout", R.drawable.ic_logout));
 
-        toggle = new ActionBarDrawerToggle(this, drawerLayout, widgetToolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawerLayout.addDrawerListener(toggle);
-//        drawerLayout.setDrawerListener(toggle);
-        toggle.syncState();
-
-//        navigationView.setNavigationItemSelectedListener(this);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener(){
-
+        final MenuAdapter adapter = new MenuAdapter(getBaseContext(), arrayMenu);
+        gridMenu.setAdapter(adapter);
+        gridMenu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int id = item.getItemId();
-
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent;
-
-                switch(id){
-                    case R.id.nav_home:
-                        break;
-                    case R.id.nav_plan:
-
-                        intent = new Intent(MainActivity.this, PlanActivity.class);
+                switch(i){
+                    case 0:
+                        intent = new Intent(getBaseContext(), PlanActivity.class);
                         startActivity(intent);
-                        Toast.makeText(getApplicationContext(),"Inbox Selected", Toast.LENGTH_SHORT).show();
-
                         break;
-                    case R.id.nav_map:
+                    case 1:
+//                        intent = new Intent(getBaseContext(), MapActivity.class);
+//                        startActivity(intent);
                         break;
-                    case R.id.nav_history:
+                    case 2:
+//                        intent = new Intent(getBaseContext(), PlanActivity.class);
+//                        startActivity(intent);
                         break;
-                    case R.id.nav_profile:
+                    case 3:
+//                        intent = new Intent(getBaseContext(), .class);
+//                        startActivity(intent);
                         break;
-                    case R.id.nav_about:
+                    case 4:
+//                        intent = new Intent(getBaseContext(), PlanActivity.class);
+//                        startActivity(intent);
+                        break;
+                    case 5:
+                        intent = new Intent(getBaseContext(), LoginActivity.class);
+                        startActivity(intent);
                         break;
                 }
-
-//        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-//                drawerLayout.closeDrawer(GravityCompat.START);
-                return true;
             }
         });
+
+        HashMap<String,String> url_maps = new HashMap<String, String>();
+        url_maps.put("Hannibal", "http://static2.hypable.com/wp-content/uploads/2013/12/hannibal-season-2-release-date.jpg");
+        url_maps.put("Big Bang Theory", "http://tvfiles.alphacoders.com/100/hdclearart-10.png");
+        url_maps.put("House of Cards", "http://cdn3.nflximg.net/images/3093/2043093.jpg");
+        url_maps.put("Game of Thrones", "http://images.boomsbeat.com/data/images/full/19640/game-of-thrones-season-4-jpg.jpg");
+
+//        HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
+//        file_maps.put("Hannibal",R.drawable.hannibal);
+//        file_maps.put("Big Bang Theory",R.drawable.bigbang);
+//        file_maps.put("House of Cards",R.drawable.house);
+//        file_maps.put("Game of Thrones", R.drawable.game_of_thrones);
+
+        for(String name : url_maps.keySet()){
+            DefaultSliderView textSliderView = new DefaultSliderView(this);
+            // initialize a SliderLayout
+            textSliderView
+//                    .description(name)
+                    .image(url_maps.get(name))
+                    .setScaleType(BaseSliderView.ScaleType.Fit);
+//                    .setOnSliderClickListener(this);
+
+            //add your extra information
+//            textSliderView.bundle(new Bundle());
+//            textSliderView.getBundle()
+//                    .putString("extra",name);
+
+            mDemoSlider.addSlider(textSliderView);
+        }
+        mDemoSlider.setPresetTransformer(SliderLayout.Transformer.Default);
+        mDemoSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
+//        mDemoSlider.setCustomAnimation(new DescriptionAnimation());
+        mDemoSlider.setDuration(4000);
+        mDemoSlider.addOnPageChangeListener(this);
+        mDemoSlider.setCustomIndicator((PagerIndicator) findViewById(R.id.custom_indicator));
+//        ListView l = (ListView)findViewById(R.id.transformers);
+//        l.setAdapter(new TransformAdapter(this));
+//        l.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                mDemoSlider.setPresetTransformer(((TextView) view).getText().toString());
+//                Toast.makeText(MainActivity.this, ((TextView) view).getText().toString(), Toast.LENGTH_SHORT).show();
+//            }
+//        });
+    }
+
+    @Override
+    protected void onStop() {
+        // To prevent a memory leak on rotation, make sure to call stopAutoCycle() on the slider before activity or fragment is destroyed
+        mDemoSlider.stopAutoCycle();
+        super.onStop();
     }
 
     @Override
     public void onBackPressed() {
 //        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
+        super.finish();
+
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+    protected int getToolbarTitle(){
+        return R.string.title_home;
+    }
+
+
+    @Override
+    public void onSliderClick(BaseSliderView slider) {
+        Toast.makeText(this,slider.getBundle().get("extra") + "",Toast.LENGTH_SHORT).show();
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        if(toggle.onOptionsItemSelected(item)){
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
+    public void onPageSelected(int position) {
+        Log.d("Slider Demo", "Page Changed: " + position);
+    }
 
-        Intent intent;
+    @Override
+    public void onPageScrollStateChanged(int state) {
 
-        switch(id) {
-            case R.id.nav_home:
-                break;
-            case R.id.nav_plan:
-
-                intent = new Intent(MainActivity.this, PlanActivity.class);
-                startActivity(intent);
-                Toast.makeText(getApplicationContext(), "Inbox Selected", Toast.LENGTH_SHORT).show();
-
-                break;
-            case R.id.nav_map:
-                break;
-            case R.id.nav_history:
-                break;
-            case R.id.nav_profile:
-                break;
-            case R.id.nav_about:
-                break;
-        }
-//        drawerLayout.closeDrawer(GravityCompat.START);
-        return true;
     }
 }
