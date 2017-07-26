@@ -62,8 +62,7 @@
             android:name=".plan.PickLocation"
             android:label=""
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-
-            </activity>
+        </activity>
 
         <activity
             android:name=".plan.DetailPlan"
@@ -72,6 +71,26 @@
 
         <activity
             android:name=".bookmark.BookmarkActivity"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".map.MapActivity"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".history.HistoryActivity"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".about.AboutActivity"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".profile.ProfileActivity"
             android:label=""
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 

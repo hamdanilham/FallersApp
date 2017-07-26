@@ -33,10 +33,14 @@ import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.DefaultSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
+import com.fallersapp.fallersapp.about.AboutActivity;
 import com.fallersapp.fallersapp.base.BaseActivity;
+import com.fallersapp.fallersapp.history.HistoryActivity;
 import com.fallersapp.fallersapp.login.LoginActivity;
+import com.fallersapp.fallersapp.map.MapActivity;
 import com.fallersapp.fallersapp.plan.PlanActivity;
 import com.fallersapp.fallersapp.R;
+import com.fallersapp.fallersapp.profile.ProfileActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
@@ -96,20 +100,20 @@ public class MainActivity extends BaseActivity implements BaseSliderView.OnSlide
                         startActivity(intent);
                         break;
                     case 1:
-//                        intent = new Intent(getBaseContext(), MapActivity.class);
-//                        startActivity(intent);
+                        intent = new Intent(getBaseContext(), MapActivity.class);
+                        startActivity(intent);
                         break;
                     case 2:
-//                        intent = new Intent(getBaseContext(), PlanActivity.class);
-//                        startActivity(intent);
+                        intent = new Intent(getBaseContext(), HistoryActivity.class);
+                        startActivity(intent);
                         break;
                     case 3:
-//                        intent = new Intent(getBaseContext(), .class);
-//                        startActivity(intent);
+                        intent = new Intent(getBaseContext(), ProfileActivity.class);
+                        startActivity(intent);
                         break;
                     case 4:
-//                        intent = new Intent(getBaseContext(), PlanActivity.class);
-//                        startActivity(intent);
+                        intent = new Intent(getBaseContext(), AboutActivity.class);
+                        startActivity(intent);
                         break;
                     case 5:
                         FirebaseAuth.getInstance().signOut();
