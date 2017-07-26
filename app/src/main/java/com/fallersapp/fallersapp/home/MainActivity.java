@@ -37,6 +37,7 @@ import com.fallersapp.fallersapp.base.BaseActivity;
 import com.fallersapp.fallersapp.login.LoginActivity;
 import com.fallersapp.fallersapp.plan.PlanActivity;
 import com.fallersapp.fallersapp.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -111,6 +112,7 @@ public class MainActivity extends BaseActivity implements BaseSliderView.OnSlide
 //                        startActivity(intent);
                         break;
                     case 5:
+                        FirebaseAuth.getInstance().signOut();
                         intent = new Intent(getBaseContext(), LoginActivity.class);
                         startActivity(intent);
                         break;

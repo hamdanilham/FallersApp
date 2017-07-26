@@ -12,17 +12,18 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.fallersapp.fallersapp.R;
+import com.fallersapp.fallersapp.home.MainActivity;
 import com.fallersapp.fallersapp.plan.PlanActivity;
 import com.fallersapp.fallersapp.signup.SignupActivity;
-import com.fallersapp.fallersapp.home.MainActivity;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+//import com.fallersapp.fallersapp.home.MainActivity;
+//import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+//import com.google.firebase.database.DatabaseReference;
+//import com.google.firebase.database.FirebaseDatabase;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -36,13 +37,13 @@ public class LoginActivity extends AppCompatActivity {
     EditText mEmailSignIn;
     @BindView(R.id.et_password_login)
     EditText mPasswordSignIn;
-    @BindView(R.id.google_sign_in)
-    Button buttonGoogleSignIn;
+//    @BindView(R.id.google_sign_in)
+//    Button buttonGoogleSignIn;
 //
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
 
-    GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestIdToken(getString(R.string.default_web_client_id)).requestEmail().build();
+//    GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestIdToken(getString(R.string.default_web_client_id)).requestEmail().build();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +60,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if (firebaseAuth.getCurrentUser() != null) {
-                    startActivity(new Intent(LoginActivity.this, PlanActivity.class));
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
                 }
             }
         };
@@ -75,18 +76,18 @@ public class LoginActivity extends AppCompatActivity {
         mButtonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getBaseContext(),MainActivity.class);
-                startActivity(intent);
-//                startSignIn();
+//                Intent intent = new Intent(getBaseContext(),MainActivity.class);
+//                startActivity(intent);
+                startSignIn();
             }
         });
 
-        buttonGoogleSignIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                googleSign();
-            }
-        });
+//        buttonGoogleSignIn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+////                googleSign();
+//            }
+//        });
     }
 
     @Override
