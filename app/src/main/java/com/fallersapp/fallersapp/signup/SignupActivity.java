@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.fallersapp.fallersapp.R;
 import com.fallersapp.fallersapp.base.BaseActivity;
+import com.fallersapp.fallersapp.home.MainActivity;
 import com.fallersapp.fallersapp.login.LoginActivity;
 import com.fallersapp.fallersapp.plan.PlanActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -56,7 +57,7 @@ public class SignupActivity extends BaseActivity {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if(firebaseAuth.getCurrentUser() != null) {
-                    startActivity(new Intent(SignupActivity.this, PlanActivity.class));
+                    startActivity(new Intent(SignupActivity.this, MainActivity.class));
                 }
             }
         };
@@ -64,8 +65,6 @@ public class SignupActivity extends BaseActivity {
         buttonSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SignupActivity.this, PlanActivity.class);
-                startActivity(intent);
                 signUp();
             }
         });
