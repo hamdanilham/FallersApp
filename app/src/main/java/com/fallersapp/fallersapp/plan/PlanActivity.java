@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import com.fallersapp.fallersapp.R;
 import com.fallersapp.fallersapp.base.BaseActivity;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
