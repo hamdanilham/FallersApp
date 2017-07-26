@@ -87,7 +87,7 @@ public class SignupActivity extends BaseActivity {
         String repassword = EditTextRepasswordSignup.getText().toString();
 
         if(TextUtils.isEmpty(email) || TextUtils.isEmpty(password) || TextUtils.isEmpty(username) || TextUtils.isEmpty(repassword)) {
-            Toast.makeText(SignupActivity.this, "Fields is Empty", Toast.LENGTH_LONG).show();
+            Toast.makeText(SignupActivity.this, "Fields is Empty.", Toast.LENGTH_LONG).show();
         } else {
             mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                 @Override
