@@ -17,10 +17,13 @@ import com.fallersapp.fallersapp.base.BaseActivity;
 import com.fallersapp.fallersapp.home.MainActivity;
 import com.fallersapp.fallersapp.login.LoginActivity;
 import com.fallersapp.fallersapp.plan.PlanActivity;
+import com.google.android.gms.maps.internal.StreetViewLifecycleDelegate;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -52,7 +55,6 @@ public class SignupActivity extends BaseActivity {
         ButterKnife.bind(this);
         setToolbar(true);
         mAuth = FirebaseAuth.getInstance();
-
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -80,11 +82,12 @@ public class SignupActivity extends BaseActivity {
     }
 
     protected void signUp() {
+        final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        final DatabaseReference usersRef = database.getReference("users");
         String email = EditTextEmailSignup.getText().toString();
-        String username = EditTextUsernameSignup.getText().toString();
-        String password= EditTextPasswordSignup.getText().toString();
+        final String username = EditTextUsernameSignup.getText().toString();
+        final String password= EditTextPasswordSignup.getText().toString();
         String repassword = EditTextRepasswordSignup.getText().toString();
-
         if(TextUtils.isEmpty(email) || TextUtils.isEmpty(password) || TextUtils.isEmpty(username) || TextUtils.isEmpty(repassword)) {
             Toast.makeText(SignupActivity.this, "Fields is Empty.", Toast.LENGTH_LONG).show();
         } else {
@@ -93,14 +96,27 @@ public class SignupActivity extends BaseActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (!task.isSuccessful()) {
                         Toast.makeText(SignupActivity.this, "Sign In Problem", Toast.LENGTH_LONG).show();
+                    } else {
+                        UserData user = new UserData(username);
+                        usersRef.child(mAuth.getCurrentUser().getUid()).setValue(user);
                     }
                 }
             });
         }
     }
 
+
+
     @Override
     protected int getToolbarTitle(){
         return R.string.title_signup;
+    }
+}
+
+class UserData{
+    public String username;
+
+    public UserData(String username) {
+        this.username = username;
     }
 }
