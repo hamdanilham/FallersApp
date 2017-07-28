@@ -16,7 +16,7 @@ import butterknife.ButterKnife;
  * Created by hamda on 13/07/2017.
  */
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }

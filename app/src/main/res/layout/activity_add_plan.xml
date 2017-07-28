@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
     tools:context="com.fallersapp.fallersapp.plan.AddPlanActivity">
 
     <LinearLayout
@@ -59,7 +60,7 @@
                 android:layout_marginTop="20dp"
                 android:gravity="top"
                 android:drawablePadding="15dp"
-                android:inputType="textEmailAddress" />
+                android:inputType="text" />
 
             <EditText
                 android:id="@+id/et_list_item"
@@ -117,7 +118,8 @@
                 android:layout_marginTop="20dp"
                 android:gravity="top"
                 android:drawablePadding="15dp"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:visibility="gone"/>
 
             <EditText
                 android:id="@+id/et_family"
@@ -131,7 +133,7 @@
                 android:layout_marginTop="20dp"
                 android:gravity="top"
                 android:drawablePadding="15dp"
-                android:inputType="textEmailAddress" />
+                android:inputType="text" />
 
             <EditText
                 android:id="@+id/et_budget"
@@ -145,7 +147,7 @@
                 android:layout_marginTop="20dp"
                 android:gravity="top"
                 android:drawablePadding="15dp"
-                android:inputType="textEmailAddress" />
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/btn_add"
