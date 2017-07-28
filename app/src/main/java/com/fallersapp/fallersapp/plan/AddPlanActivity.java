@@ -1,23 +1,27 @@
 package com.fallersapp.fallersapp.plan;
 
+import android.content.ClipData;
 import android.content.Intent;
 import android.icu.util.Calendar;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.codetroopers.betterpickers.calendardatepicker.CalendarDatePickerDialogFragment;
 import com.codetroopers.betterpickers.datepicker.DatePickerBuilder;
 import com.fallersapp.fallersapp.home.MainActivity;
+import com.fallersapp.fallersapp.home.mMenu;
 import com.fallersapp.fallersapp.plan.PickLocation;
 import com.fallersapp.fallersapp.R;
 import com.fallersapp.fallersapp.base.BaseActivity;
@@ -28,6 +32,9 @@ import com.sleepbot.datetimepicker.time.RadialPickerLayout;
 import com.sleepbot.datetimepicker.time.TimePickerDialog;
 //import com.google.firebase.database.DatabaseReference;
 //import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -50,21 +57,27 @@ public class AddPlanActivity extends BaseActivity implements DatePickerDialog.On
     @BindView(R.id.rv_list_plan)
     RecyclerView recyclerViewPlan;
 
+    @BindView(R.id.et_list_item)
+    EditText editTextListItem;
+
     @BindView(R.id.et_dep_time)
     EditText editTextDepTime;
 
     @BindView(R.id.et_arr_time)
     EditText editTextArrTime;
 
-    private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private LinearLayoutManager mLinearLayoutManager;
+    @BindView(R.id.enter)
+    ImageView imageViewEnter;
 
     int yearDept, yearArr, mYear = 1985;
     int monthDept, monthArr;
     int dayDept, dayArr;
     boolean dateDeptOn = false;
     boolean dateArrOn = false;
+    String item;
+
+    List<ListItem> itemArrayList = new ArrayList<>();
+    ListItemAdapter listItemAdapter;
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
@@ -73,6 +86,22 @@ public class AddPlanActivity extends BaseActivity implements DatePickerDialog.On
         setContentView(R.layout.activity_add_plan);
         ButterKnife.bind(this);
         setToolbar(true);
+
+
+//        mAdapter = new ListItemAdapter(itemArrayList);
+
+        //recycle view
+        listItemAdapter = new ListItemAdapter(this, itemArrayList);
+        recyclerViewPlan.setLayoutManager(new LinearLayoutManager(this));
+        recyclerViewPlan.setAdapter(listItemAdapter);
+//        recyclerViewPlan.setHasFixedSize(true);
+//        recyclerViewPlan.setItemAnimator(new DefaultItemAnimator());
+
+        List<ListItem> ItemList = new ArrayList<>();
+        ItemList.add(new ListItem("Bag"));
+
+        itemArrayList.addAll(ItemList);
+        listItemAdapter.notifyDataSetChanged();
 
         //date picker
         final Calendar calendar = Calendar.getInstance();
@@ -105,6 +134,19 @@ public class AddPlanActivity extends BaseActivity implements DatePickerDialog.On
             }
         });
 
+        imageViewEnter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                item = editTextListItem.getText().toString();
+
+//                itemArrayList.add(new mListBarang(item));
+//                ListItem listItem = new ListItem(item);
+//                itemArrayList.add(listItem);
+//
+//                editTextListItem.setText(null);
+            }
+        });
+
 //        findViewById(R.id.timeButton).setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -125,14 +167,6 @@ public class AddPlanActivity extends BaseActivity implements DatePickerDialog.On
                 tpd.setOnTimeSetListener(this);
             }
         }
-
-        //recycle view
-        recyclerViewPlan.setHasFixedSize(true);
-        mLinearLayoutManager = new LinearLayoutManager(this);
-        recyclerViewPlan.setLayoutManager(mLinearLayoutManager);
-
-        mAdapter = new PlanAdapter();
-        recyclerViewPlan.setAdapter(mAdapter);
 
 //        editTextDepTime.setOnClickListener(new View.OnClickListener() {
 //            @Override

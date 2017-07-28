@@ -17,4 +17,6 @@
     <string name="title_history">History</string>
     <string name="title_map">Map</string>
     <string name="title_profile">Profile</string>
+    <string name="title_term">Term Of Service</string>
+    <string name="title_privacy">Privacy Police</string>
 </resources>

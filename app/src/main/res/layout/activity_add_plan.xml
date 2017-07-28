@@ -23,142 +23,215 @@
             android:paddingLeft="70dp"
             android:paddingRight="70dp">
 
-            <EditText
+            <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/et_plan_name"
                 android:layout_width="match_parent"
-                android:textColor="@color/colorAccent"
                 android:layout_height="wrap_content"
-                android:hint="Plan Name"
-                android:textSize="18sp"
+                android:layout_marginTop="20dp"
                 android:drawableLeft="@drawable/ic_plan_name"
-                android:layout_marginTop="20dp"
                 android:drawablePadding="15dp"
-                android:inputType="textEmailAddress" />
-
-            <EditText
-                android:id="@+id/et_location"
-                android:layout_below="@+id/et_plan_name"
-                android:layout_width="match_parent"
+                android:hint="Plan Name"
                 android:textColor="@color/colorAccent"
-                android:layout_height="wrap_content"
-                android:hint="Location"
                 android:textSize="18sp"
-                android:drawableLeft="@drawable/ic_location"
-                android:layout_marginTop="20dp"
-                android:drawablePadding="15dp"
-                android:inputType="textEmailAddress" />
+                app:met_baseColor="@color/colorAccent"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextSize="14dp"
+                app:met_singleLineEllipsis="true"
+                app:met_textColor="@color/colorAccent"
+                app:met_textColorHint="@color/text_grey" />
 
-            <EditText
-                android:id="@+id/et_descrpition"
-                android:layout_below="@+id/et_location"
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/et_plan_name"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="15dp"
+                android:hint="Location"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:met_baseColor="@color/colorAccent"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextSize="14dp"
+                app:met_singleLineEllipsis="true"
+                app:met_textColor="@color/colorAccent"
+                app:met_textColorHint="@color/text_grey"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_descrpition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_location"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="15dp"
+                android:gravity="top"
+                android:hint="Description"
+                android:inputType="text"
                 android:minHeight="150dp"
                 android:textColor="@color/colorAccent"
-                android:hint="Description"
                 android:textSize="18sp"
-                android:layout_marginTop="20dp"
-                android:gravity="top"
-                android:drawablePadding="15dp"
-                android:inputType="text" />
+                app:met_baseColor="@color/colorAccent"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextSize="14dp"
+                app:met_singleLineEllipsis="true"
+                app:met_textColor="@color/colorAccent"
+                app:met_textColorHint="@color/text_grey"/>
 
-            <EditText
-                android:id="@+id/et_list_item"
-                android:layout_below="@+id/et_descrpition"
+            <LinearLayout
+                android:id="@+id/linearItem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorAccent"
-                android:hint="List Item"
-                android:textSize="18sp"
-                android:drawableLeft="@drawable/ic_list_item"
-                android:drawableRight="@drawable/ic_enter"
-                android:layout_marginTop="20dp"
-                android:gravity="top"
-                android:drawablePadding="15dp"
-                android:inputType="textEmailAddress" />
+                android:orientation="horizontal"
+                android:layout_below="@+id/et_descrpition">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/et_list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/ic_list_item"
+                    android:drawablePadding="15dp"
+                    android:gravity="top"
+                    android:hint="List Item"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    app:met_baseColor="@color/colorAccent"
+                    app:met_floatingLabel="normal"
+                    app:met_floatingLabelTextSize="14dp"
+                    app:met_singleLineEllipsis="true"
+                    app:met_textColor="@color/colorAccent"
+                    app:met_textColorHint="@color/text_grey"/>
+
+                <ImageView
+                    android:id="@+id/enter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="6"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@drawable/ic_enter"
+                    android:gravity="top"
+                    android:hint="List Item"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="25dp"
+                    android:paddingTop="25dp"
+                    android:src="@drawable/ic_enter"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
 
             <RelativeLayout
-                android:layout_below="@+id/et_list_item"
                 android:id="@+id/rl_list_item"
-                android:padding="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearItem"
+                android:padding="10dp">
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/rv_list_plan"
-                    android:scrollbars="vertical"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical" />
 
             </RelativeLayout>
 
-            <EditText
+            <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/et_dep_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/rl_list_item"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorAccent"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_time"
+                android:drawablePadding="15dp"
+                android:gravity="top"
                 android:hint="Departure Time"
-                android:textSize="18sp"
-                android:drawableLeft="@drawable/ic_time"
-                android:layout_marginTop="20dp"
-                android:gravity="top"
-                android:drawablePadding="15dp"
-                android:inputType="textEmailAddress" />
-
-            <EditText
-                android:id="@+id/et_arr_time"
-                android:layout_below="@+id/et_dep_time"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorAccent"
-                android:hint="Arrival Time"
-                android:textSize="18sp"
-                android:drawableLeft="@drawable/ic_time"
-                android:layout_marginTop="20dp"
-                android:gravity="top"
-                android:drawablePadding="15dp"
                 android:inputType="textEmailAddress"
-                android:visibility="gone"/>
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:met_baseColor="@color/colorAccent"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextSize="14dp"
+                app:met_singleLineEllipsis="true"
+                app:met_textColor="@color/colorAccent"
+                app:met_textColorHint="@color/text_grey"/>
 
-            <EditText
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_arr_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_dep_time"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_time"
+                android:drawablePadding="15dp"
+                android:gravity="top"
+                android:hint="Arrival Time"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:visibility="gone"
+                app:met_baseColor="@color/colorAccent"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextSize="14dp"
+                app:met_singleLineEllipsis="true"
+                app:met_textColor="@color/colorAccent"
+                app:met_textColorHint="@color/text_grey"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/et_family"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/et_arr_time"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorAccent"
-                android:hint="Family"
-                android:textSize="18sp"
+                android:layout_marginTop="20dp"
                 android:drawableLeft="@drawable/ic_family"
-                android:layout_marginTop="20dp"
-                android:gravity="top"
                 android:drawablePadding="15dp"
-                android:inputType="text" />
+                android:gravity="top"
+                android:hint="Family"
+                android:inputType="text"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:met_baseColor="@color/colorAccent"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextSize="14dp"
+                app:met_singleLineEllipsis="true"
+                app:met_textColor="@color/colorAccent"
+                app:met_textColorHint="@color/text_grey"/>
 
-            <EditText
+            <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/et_budget"
-                android:layout_below="@+id/et_family"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorAccent"
-                android:hint="Budget"
-                android:textSize="18sp"
-                android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+                android:layout_below="@+id/et_family"
                 android:layout_marginTop="20dp"
-                android:gravity="top"
+                android:drawableLeft="@drawable/ic_attach_money_black_24dp"
                 android:drawablePadding="15dp"
-                android:inputType="numberDecimal" />
+                android:gravity="top"
+                android:hint="Budget"
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                app:met_baseColor="@color/colorAccent"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextSize="14dp"
+                app:met_singleLineEllipsis="true"
+                app:met_textColor="@color/colorAccent"
+                app:met_textColorHint="@color/text_grey"/>
 
             <Button
                 android:id="@+id/btn_add"
-                android:layout_below="@+id/et_budget"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:padding="15dp"
-                android:textColor="@color/colorBackground"
+                android:layout_below="@+id/et_budget"
                 android:backgroundTint="@color/colorAccent"
-                android:text="Add"/>
+                android:padding="15dp"
+                android:text="Add"
+                android:textColor="@color/colorBackground"
+                android:textSize="18sp" />
 
 
         </RelativeLayout>

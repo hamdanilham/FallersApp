@@ -2,6 +2,7 @@ package com.fallersapp.fallersapp.home;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -22,6 +23,7 @@ import android.view.MenuItem;
 import android.support.v7.widget.RecyclerView;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -76,7 +78,7 @@ public class MainActivity extends BaseActivity implements BaseSliderView.OnSlide
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        setToolbar(true);
+        setToolbar(false);
 
         mDemoSlider = (SliderLayout)findViewById(R.id.slider);
 
