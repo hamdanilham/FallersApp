@@ -117,6 +117,7 @@ public class LoginActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(!task.isSuccessful()) {
                         Toast.makeText(LoginActivity.this, "Sign In Problem", Toast.LENGTH_LONG).show();
+                        Toast.makeText(LoginActivity.this, "Please Check Email And Password", Toast.LENGTH_LONG).show();
                     }
                 }
             });

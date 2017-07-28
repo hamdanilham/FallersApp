@@ -84,7 +84,7 @@ public class SignupActivity extends BaseActivity {
     protected void signUp() {
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference usersRef = database.getReference("users");
-        String email = EditTextEmailSignup.getText().toString();
+        final String email = EditTextEmailSignup.getText().toString();
         final String username = EditTextUsernameSignup.getText().toString();
         final String password= EditTextPasswordSignup.getText().toString();
         String repassword = EditTextRepasswordSignup.getText().toString();
@@ -95,9 +95,9 @@ public class SignupActivity extends BaseActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (!task.isSuccessful()) {
-                        Toast.makeText(SignupActivity.this, "Sign In Problem", Toast.LENGTH_LONG).show();
+                        Toast.makeText(SignupActivity.this, "Sign Up Problem", Toast.LENGTH_LONG).show();
                     } else {
-                        UserData user = new UserData(username);
+                        UserData user = new UserData(mAuth.getCurrentUser().getUid().toString().substring(0, 8),username, email);
                         usersRef.child(mAuth.getCurrentUser().getUid()).setValue(user);
                     }
                 }
@@ -114,9 +114,13 @@ public class SignupActivity extends BaseActivity {
 }
 
 class UserData{
-    public String username;
+    public String id;
+    public String name;
+    public String email;
 
-    public UserData(String username) {
-        this.username = username;
+    public UserData(String id, String name, String email) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
     }
 }
