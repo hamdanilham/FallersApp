@@ -83,6 +83,7 @@
                 app:met_textColorHint="@color/text_grey"
                 app:met_singleLineEllipsis="true"
                 app:met_floatingLabelTextSize="14dp"/>
+
             <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/et_repassword_signup"
                 android:textColor="@color/colorAccent"
