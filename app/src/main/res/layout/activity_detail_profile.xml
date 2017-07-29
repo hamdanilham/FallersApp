@@ -169,7 +169,7 @@
             android:text="Family Name" />
 
         <Button
-            android:id="@+id/btn_add_plan"
+            android:id="@+id/btn_add_family"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_alignEnd="@+id/textView4"

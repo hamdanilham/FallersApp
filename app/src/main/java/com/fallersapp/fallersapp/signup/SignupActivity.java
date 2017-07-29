@@ -97,7 +97,7 @@ public class SignupActivity extends BaseActivity {
                     if (!task.isSuccessful()) {
                         Toast.makeText(SignupActivity.this, "Sign Up Problem", Toast.LENGTH_LONG).show();
                     } else {
-                        UserData user = new UserData(mAuth.getCurrentUser().getUid().toString().substring(0, 8),username, email);
+                        UserData user = new UserData(mAuth.getCurrentUser().getUid().toString().substring(0, 6),username, email);
                         usersRef.child(mAuth.getCurrentUser().getUid()).setValue(user);
                     }
                 }
