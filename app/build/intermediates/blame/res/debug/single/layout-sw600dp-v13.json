@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\three_keys_view.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\layout-sw600dp-v13\\three_keys_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\date_picker_dialog.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\47108d0344814f0e22fc6de3c433289c480323ff\\output\\res\\layout-sw600dp\\date_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\three_keys_view_right_drawable.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\layout-sw600dp-v13\\three_keys_view_right_drawable.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\three_keys_view_leftright.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\layout-sw600dp-v13\\three_keys_view_leftright.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\three_keys_view_text.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\layout-sw600dp-v13\\three_keys_view_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\calendar_date_picker_dialog.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\layout-sw600dp-v13\\calendar_date_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\e98da5374e1c5b84396b9a510d2e16bf9e52cb67\\output\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+    }
+]

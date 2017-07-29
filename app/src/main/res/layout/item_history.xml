@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearHistory"
+    android:minWidth="100dp"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:layout_marginTop="2dp"
+    android:background="@color/window_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/judul"
+        android:text="Bag"
+        android:layout_weight="1"
+        android:textColor="@color/text_content"
+        android:textSize="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/waktu"
+        android:text="Bag"
+        android:layout_weight="1"
+        android:textColor="@color/text_content"
+        android:textSize="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tujuan"
+        android:text="Bag"
+        android:layout_weight="1"
+        android:textColor="@color/text_content"
+        android:textSize="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

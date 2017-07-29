@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-sw600dp-xhdpi-v13\\ic_backspace_disabled_light.png",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\drawable-sw600dp-xhdpi-v13\\ic_backspace_disabled_light.png"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-sw600dp-xhdpi-v13\\ic_backspace_disabled_dark.png",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\drawable-sw600dp-xhdpi-v13\\ic_backspace_disabled_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-sw600dp-xhdpi-v13\\ic_backspace_normal_light.png",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\drawable-sw600dp-xhdpi-v13\\ic_backspace_normal_light.png"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-sw600dp-xhdpi-v13\\ic_backspace_normal_dark.png",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\drawable-sw600dp-xhdpi-v13\\ic_backspace_normal_dark.png"
+    }
+]

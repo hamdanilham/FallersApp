@@ -105,6 +105,12 @@
             android:label=""
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
+        <activity
+            android:name=".history.DetailHistoryActivity"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyD7RkzYBvTXe7x2g1bmcYlvmpVD1vNP_tI"/>

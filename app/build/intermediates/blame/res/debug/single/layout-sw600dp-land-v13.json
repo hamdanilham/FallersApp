@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-land-v13\\expiration_picker_dialog.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\layout-sw600dp-land-v13\\expiration_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-land-v13\\hms_picker_dialog.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\layout-sw600dp-land-v13\\hms_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-land-v13\\date_picker_dialog.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\layout-sw600dp-land-v13\\date_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-land-v13\\time_picker_dialog.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\layout-sw600dp-land-v13\\time_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-land-v13\\number_picker_dialog.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\layout-sw600dp-land-v13\\number_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-land-v13\\calendar_date_picker_dialog.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\layout-sw600dp-land-v13\\calendar_date_picker_dialog.xml"
+    }
+]

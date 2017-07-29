@@ -1,6 +1,7 @@
 package com.fallersapp.fallersapp.plan;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,6 +27,10 @@ import butterknife.ButterKnife;
 
 public class ListItemAdapter extends BaseRecycleviewAdapter<ListItem> {
 
+    AddPlanActivity addPlanActivity;
+
+    OnClickInAdapter onClickInAdapter;
+
     public ListItemAdapter(Context context, List data) {
         super (context, data);
     }
@@ -37,20 +42,34 @@ public class ListItemAdapter extends BaseRecycleviewAdapter<ListItem> {
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
         ItemViewHolder viewHolder = (ItemViewHolder) holder;
 
         ListItem itemBarang = mListData.get(position);
         viewHolder.barang.setText(itemBarang.getBarang());
+        viewHolder.hapus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onClickInAdapter = (OnClickInAdapter) mContext;
+                onClickInAdapter.onClickInAdapter(position);
+            }
+        });
     }
 
     class ItemViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.barang)
         TextView barang;
 
+        @BindView(R.id.hapus)
+        ImageView hapus;
+
         public ItemViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
         }
+    }
+
+    public interface OnClickInAdapter {
+        public void onClickInAdapter(int content);
     }
 }

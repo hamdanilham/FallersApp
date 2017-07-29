@@ -1,23 +1,31 @@
 package com.fallersapp.fallersapp.plan;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.location.Address;
+import android.location.Geocoder;
 import android.net.Uri;
 import android.os.Bundle;
 import android.renderscript.Double2;
+import android.support.v4.app.ActivityCompat;
 import android.text.Html;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.fallersapp.fallersapp.Manifest;
 import com.fallersapp.fallersapp.R;
 import com.fallersapp.fallersapp.base.BaseActivity;
 import com.fallersapp.fallersapp.login.LoginActivity;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.common.api.Status;
+import com.google.android.gms.location.places.AutocompleteFilter;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlaceAutocomplete;
 import com.google.android.gms.location.places.ui.PlaceAutocompleteFragment;
@@ -27,12 +35,18 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+
 import android.text.Spanned;
 
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -41,7 +55,7 @@ import butterknife.ButterKnife;
  * Created by hamda on 17/07/2017.
  */
 
-public class PickLocation extends BaseActivity implements OnMapReadyCallback, PlaceSelectionListener{
+public class PickLocation extends BaseActivity implements OnMapReadyCallback, PlaceSelectionListener {
     @BindView(R.id.place_attribution)
     TextView place_att;
 
@@ -51,14 +65,13 @@ public class PickLocation extends BaseActivity implements OnMapReadyCallback, Pl
 
     MapView mapView;
     GoogleMap map;
-
-    final double latitude = 0,longitude = 0;
-
-    LatLng latlong;
+    double longitude, latitude;
+    LatLng place1;
     String name;
     List<Address> address;
+    Place places;
 
-    protected void onCreate(Bundle saveInstanceState){
+    public void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_pick_location);
         ButterKnife.bind(this);
@@ -67,20 +80,26 @@ public class PickLocation extends BaseActivity implements OnMapReadyCallback, Pl
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-
+        Log.d("PickLocation", "onCreate");
         PlaceAutocompleteFragment autocompleteFragment = (PlaceAutocompleteFragment)
                 getFragmentManager().findFragmentById(R.id.autocomplete_fragment);
         autocompleteFragment.setHint("Tujuan Anda");
         autocompleteFragment.setOnPlaceSelectedListener(new PlaceSelectionListener() {
             @Override
             public void onPlaceSelected(Place place) {
-                Log.i("WTF", "Place: " + place.getName());
-//                latlong = place.getLatLng();
-//                Log.v("Latitude is", "" + queriedLocation.latitude);
-//                Log.v("Longitude is", "" + queriedLocation.longitude);
+                map.clear();
+                map.addMarker(new MarkerOptions().position(new LatLng(place.getLatLng().latitude, place.getLatLng().longitude)).title("Marker"));
+                map.animateCamera(CameraUpdateFactory.newLatLng(new LatLng(place.getLatLng().latitude, place.getLatLng().longitude)));
+                map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(place.getLatLng().latitude, place.getLatLng().longitude), (float) 12.0));
+                if (ActivityCompat.checkSelfPermission(getBaseContext(), android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getBaseContext(), android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                    return;
+                }
+                map.setMyLocationEnabled(true);
 
-//                latlong = Double.parseDouble(place.getLatLng().toString());
-                Toast.makeText(PickLocation.this, place.getLatLng().toString(), Toast.LENGTH_LONG).show();
+                AutocompleteFilter filter = new AutocompleteFilter.Builder()
+                        .setTypeFilter(AutocompleteFilter.TYPE_FILTER_CITIES)
+                        .build();
+
             }
 
             @Override
@@ -89,43 +108,23 @@ public class PickLocation extends BaseActivity implements OnMapReadyCallback, Pl
             }
         });
 
-        try {
-            Intent intent =
-                    new PlaceAutocomplete.IntentBuilder(PlaceAutocomplete.MODE_FULLSCREEN)
-                            .build(this);
-            startActivityForResult(intent, PLACE_AUTOCOMPLETE_REQUEST_CODE);
-        } catch (GooglePlayServicesRepairableException e) {
-            // TODO: Handle the error.
-        } catch (GooglePlayServicesNotAvailableException e) {
-            // TODO: Handle the error.
-        }
-
     }
 
     @Override
-    public void onBackPressed() {
-        super.finish();
-    }
-
-    @Override
-    protected int getToolbarTitle(){
+    protected int getToolbarTitle() {
         return R.string.title_pick_loc;
     }
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         map = googleMap;
-
-        final double Lat = latitude;
-        final double Long = longitude;
-
-        // Add a marker in Sydney, Australia, and move the camera
-
-        final CameraPosition cameraPosition = new CameraPosition.Builder()
-                .target(new LatLng(0, 0))
-                .zoom(15)
-                .build();
-
+//
+//
+//        map.addMarker(new MarkerOptions()
+//                .position()
+//                .title("Marker"));
+//
+//
     }
 
     @Override
@@ -147,7 +146,14 @@ public class PickLocation extends BaseActivity implements OnMapReadyCallback, Pl
 
     @Override
     public void onPlaceSelected(Place place) {
-
+//        map.clear();
+//        map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(place.getLatLng().latitude, place.getLatLng().longitude), (float) 16.0));
+//        map.addMarker(new MarkerOptions().position(new LatLng(place.getLatLng().latitude, place.getLatLng().longitude)).title("Marker"));
+//        map.animateCamera(CameraUpdateFactory.newLatLng(new LatLng(place.getLatLng().latitude, place.getLatLng().longitude)));
+//        if (ActivityCompat.checkSelfPermission(getBaseContext(), android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getBaseContext(), android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+//            return;
+//        }
+//        map.setMyLocationEnabled(true);
     }
 
     @Override

@@ -1,0 +1,469 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:2:1-119:12
+	package
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:3:5-40
+		INJECTED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.CALL_PHONE
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:5:5-69
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:5:22-66
+uses-permission#android.permission.SEND_SMS
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.WRITE_CONTACTS
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:7:5-72
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:7:22-70
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:8:5-66
+MERGED from [com.google.android.gms:play-services-gcm:11.0.2] C:\Users\ziter\.android\build-cache\40e68b6ed2ab504ac798e74fd5cbd2d5d27b266d\output\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:11.0.2] C:\Users\ziter\.android\build-cache\1a8e1ef11195bea2178ae17eae7fbb7c29774aa7\output\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-maps:11.0.2] C:\Users\ziter\.android\build-cache\378e2b4383dcb89ffc5ae2f4fb63ee83ed0c1a31\output\AndroidManifest.xml:20:5-66
+MERGED from [com.daimajia.slider:library:1.1.5] C:\Users\ziter\.android\build-cache\ab1e9b73eb4abd1b40f32e4c0a2be1650275791d\output\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] C:\Users\ziter\.android\build-cache\ae6ed6d516d12bf8948690383088583a83b1d441\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:8:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:9:5-80
+MERGED from [com.daimajia.slider:library:1.1.5] C:\Users\ziter\.android\build-cache\ab1e9b73eb4abd1b40f32e4c0a2be1650275791d\output\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.WRITE_INTERNAL_STORAGE
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:10:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:11:22-77
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:12:22-76
+application
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:14:5-117:19
+MERGED from [com.google.android.gms:play-services-location:11.0.2] C:\Users\ziter\.android\build-cache\99b34c7b66f526b6e4769990f5ddc1f7dbdbe38f\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-gcm:11.0.2] C:\Users\ziter\.android\build-cache\40e68b6ed2ab504ac798e74fd5cbd2d5d27b266d\output\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-iid:11.0.2] C:\Users\ziter\.android\build-cache\1a8e1ef11195bea2178ae17eae7fbb7c29774aa7\output\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-places:11.0.2] C:\Users\ziter\.android\build-cache\be9f5d745f20dea5f2bdad33160a41278c60af8f\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-maps:11.0.2] C:\Users\ziter\.android\build-cache\378e2b4383dcb89ffc5ae2f4fb63ee83ed0c1a31\output\AndroidManifest.xml:24:5-19
+MERGED from [uk.co.chrisjenx:calligraphy:2.1.0] C:\Users\ziter\.android\build-cache\a47892a2637a76ed338e7e6e2109f38aaca955fe\output\AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\ziter\.android\build-cache\53c55efc7dfdec91f6b982f8dd1e5ff0004d5de0\output\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.firebase:firebase-auth:11.0.2] C:\Users\ziter\.android\build-cache\a221bed5d44bcb466aeb4e6fb33ac0f8a1830803\output\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.0.2] C:\Users\ziter\.android\build-cache\1127fc8bd7c9fc26803aad5e20b767e777ad8ab6\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.firebase:firebase-core:11.0.2] C:\Users\ziter\.android\build-cache\e12506f113896db6b7c8b88c1815daf9dde57b20\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] C:\Users\ziter\.android\build-cache\ae6ed6d516d12bf8948690383088583a83b1d441\output\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-common:11.0.2] C:\Users\ziter\.android\build-cache\4dc4b593b09ddfc77cb53a35a5977a57bd065d5a\output\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.2] C:\Users\ziter\.android\build-cache\937c290975d9a58ea9460c0f333c1b78ec40a815\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.2] C:\Users\ziter\.android\build-cache\c947215e0834ce48154b80ccbed099bb9aa310b1\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\ziter\.android\build-cache\1116629c23e43aa2812b2fb23373f3b73d578aa1\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\e98da5374e1c5b84396b9a510d2e16bf9e52cb67\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\ee69191a58de939521e5404bff83e2f46a5392c0\output\AndroidManifest.xml:26:5-20
+MERGED from [com.github.renaudcerrato:FloatingSearchView:1.0.1] C:\Users\ziter\.android\build-cache\861c1a7308d812f09c1403ce661fa51da49fbdb4\output\AndroidManifest.xml:12:5-20
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\dd253018c1b0b8f3ed4097383799b056d5225e90\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\dfd37f9d850d6543e05aba04d168c2a3e68f2d5a\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\09d124e7c0dbe94395a790159087ed1152d159a0\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\b7e351b5239d602f544e3fff59123bbd6bebc70f\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\dc6b778dd01137c7e6d35ab0bcca1afe4e770e25\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\993f8023f6437f6b29ce49b02ebd5ad3b6901ab7\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\45dd79fa197b5d5bbd3339afea0dd4520c640c5f\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\81037811e0b0dc2f210c593c8e3f65089760e88b\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\917945a59ac741ec3e258220c739df5f5f9d1032\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\33c3745fd27c5ef1a2992591bd2e62ccd8c7f7ff\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:17:9-41
+	android:supportsRtl
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:19:9-35
+	android:roundIcon
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:18:9-54
+	android:allowBackup
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:15:9-35
+	android:icon
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:16:9-46
+	android:theme
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:20:9-40
+activity#com.fallersapp.fallersapp.login.LoginActivity
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:22:9-25:72
+	android:label
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:24:13-34
+	android:theme
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:25:13-69
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:23:13-48
+activity#com.fallersapp.fallersapp.splash.SplashActivity
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:27:9-35:20
+	android:theme
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:28:13-50
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:30:13-34:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:31:17-69
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:31:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:33:17-77
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:33:27-74
+activity#com.fallersapp.fallersapp.signup.SignupActivity
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:37:9-44:20
+	android:label
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:39:13-29
+	android:theme
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:40:13-69
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:38:13-50
+activity#com.fallersapp.fallersapp.home.MainActivity
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:46:9-50:20
+	android:label
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:48:13-29
+	android:theme
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:49:13-69
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:47:13-46
+activity#com.fallersapp.fallersapp.plan.PlanActivity
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:52:9-55:72
+	android:label
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:54:13-29
+	android:theme
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:55:13-69
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:53:13-46
+activity#com.fallersapp.fallersapp.plan.AddPlanActivity
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:57:9-60:72
+	android:label
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:59:13-29
+	android:theme
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:60:13-69
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:58:13-49
+activity#com.fallersapp.fallersapp.plan.PickLocation
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:62:9-66:20
+	android:label
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:64:13-29
+	android:theme
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:65:13-69
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:63:13-46
+activity#com.fallersapp.fallersapp.plan.DetailPlan
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:68:9-71:72
+	android:label
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:70:13-29
+	android:theme
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:71:13-69
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:69:13-44
+activity#com.fallersapp.fallersapp.bookmark.BookmarkActivity
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:73:9-76:72
+	android:label
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:75:13-29
+	android:theme
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:76:13-69
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:74:13-54
+activity#com.fallersapp.fallersapp.map.MapActivity
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:78:9-81:72
+	android:label
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:80:13-29
+	android:theme
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:81:13-69
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:79:13-44
+activity#com.fallersapp.fallersapp.history.HistoryActivity
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:83:9-86:72
+	android:label
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:85:13-29
+	android:theme
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:86:13-69
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:84:13-52
+activity#com.fallersapp.fallersapp.about.AboutActivity
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:88:9-91:72
+	android:label
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:90:13-29
+	android:theme
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:91:13-69
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:89:13-48
+activity#com.fallersapp.fallersapp.profile.ProfileActivity
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:93:9-96:72
+	android:label
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:95:13-29
+	android:theme
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:96:13-69
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:94:13-52
+activity#com.fallersapp.fallersapp.about.TosActivity
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:98:9-101:72
+	android:label
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:100:13-29
+	android:theme
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:101:13-69
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:99:13-46
+activity#com.fallersapp.fallersapp.about.PrivacyActivity
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:103:9-106:72
+	android:label
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:105:13-29
+	android:theme
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:106:13-69
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:104:13-50
+activity#com.fallersapp.fallersapp.history.DetailHistoryActivity
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:108:9-111:72
+	android:label
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:110:13-29
+	android:theme
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:111:13-69
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:109:13-58
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:114:9-116:70
+	android:value
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:116:13-68
+	android:name
+		ADDED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml:115:13-58
+uses-sdk
+INJECTED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.jakewharton:butterknife:8.7.0] C:\Users\ziter\.android\build-cache\0cfeec731d6cf8d8774422de621db8a0a759d1ea\output\AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-location:11.0.2] C:\Users\ziter\.android\build-cache\99b34c7b66f526b6e4769990f5ddc1f7dbdbe38f\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-gcm:11.0.2] C:\Users\ziter\.android\build-cache\40e68b6ed2ab504ac798e74fd5cbd2d5d27b266d\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-iid:11.0.2] C:\Users\ziter\.android\build-cache\1a8e1ef11195bea2178ae17eae7fbb7c29774aa7\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-places:11.0.2] C:\Users\ziter\.android\build-cache\be9f5d745f20dea5f2bdad33160a41278c60af8f\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-maps:11.0.2] C:\Users\ziter\.android\build-cache\378e2b4383dcb89ffc5ae2f4fb63ee83ed0c1a31\output\AndroidManifest.xml:23:5-43
+MERGED from [uk.co.chrisjenx:calligraphy:2.1.0] C:\Users\ziter\.android\build-cache\a47892a2637a76ed338e7e6e2109f38aaca955fe\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.daimajia.slider:library:1.1.5] C:\Users\ziter\.android\build-cache\ab1e9b73eb4abd1b40f32e4c0a2be1650275791d\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\ziter\.android\build-cache\53c55efc7dfdec91f6b982f8dd1e5ff0004d5de0\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:11.0.2] C:\Users\ziter\.android\build-cache\2d4d202f73630ef9824b34732ae79898be6aba37\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-storage:11.0.2] C:\Users\ziter\.android\build-cache\a384960307e513d861f26a15c6120344177f45ad\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage-common:11.0.2] C:\Users\ziter\.android\build-cache\a5229972e58adc1ce2031d2b9f815711f1908569\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-auth:11.0.2] C:\Users\ziter\.android\build-cache\a221bed5d44bcb466aeb4e6fb33ac0f8a1830803\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.2] C:\Users\ziter\.android\build-cache\1127fc8bd7c9fc26803aad5e20b767e777ad8ab6\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-core:11.0.2] C:\Users\ziter\.android\build-cache\e12506f113896db6b7c8b88c1815daf9dde57b20\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] C:\Users\ziter\.android\build-cache\ae6ed6d516d12bf8948690383088583a83b1d441\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-database:11.0.2] C:\Users\ziter\.android\build-cache\427cd26a2f15bedd45e4a4d7780b1c00f6cc0a14\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:11.0.2] C:\Users\ziter\.android\build-cache\259e989dc3c498692aee1711edd83c8658d2e153\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-common:11.0.2] C:\Users\ziter\.android\build-cache\4dc4b593b09ddfc77cb53a35a5977a57bd065d5a\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.2] C:\Users\ziter\.android\build-cache\937c290975d9a58ea9460c0f333c1b78ec40a815\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.2] C:\Users\ziter\.android\build-cache\c947215e0834ce48154b80ccbed099bb9aa310b1\output\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\ziter\.android\build-cache\1116629c23e43aa2812b2fb23373f3b73d578aa1\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\e98da5374e1c5b84396b9a510d2e16bf9e52cb67\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\ee69191a58de939521e5404bff83e2f46a5392c0\output\AndroidManifest.xml:20:5-44
+MERGED from [com.rengwuxian.materialedittext:library:2.1.4] C:\Users\ziter\.android\build-cache\a3b4f2a5be96098e97f9d9627fb2f7a0c4527b7b\output\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.renaudcerrato:FloatingSearchView:1.0.1] C:\Users\ziter\.android\build-cache\861c1a7308d812f09c1403ce661fa51da49fbdb4\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\7302d1411ff25364e66e21ac8188cc78b080110c\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\dd253018c1b0b8f3ed4097383799b056d5225e90\output\AndroidManifest.xml:20:5-44
+MERGED from [com.code-troopers.betterpickers:library:3.1.0] C:\Users\ziter\.android\build-cache\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\dfd37f9d850d6543e05aba04d168c2a3e68f2d5a\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\09d124e7c0dbe94395a790159087ed1152d159a0\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\b7e351b5239d602f544e3fff59123bbd6bebc70f\output\AndroidManifest.xml:20:5-44
+MERGED from [com.github.flavienlaurent.datetimepicker:library:0.0.2] C:\Users\ziter\.android\build-cache\47108d0344814f0e22fc6de3c433289c480323ff\output\AndroidManifest.xml:3:5-72
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\dc6b778dd01137c7e6d35ab0bcca1afe4e770e25\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\993f8023f6437f6b29ce49b02ebd5ad3b6901ab7\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\45dd79fa197b5d5bbd3339afea0dd4520c640c5f\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\81037811e0b0dc2f210c593c8e3f65089760e88b\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\917945a59ac741ec3e258220c739df5f5f9d1032\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\33c3745fd27c5ef1a2992591bd2e62ccd8c7f7ff\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\e98da5374e1c5b84396b9a510d2e16bf9e52cb67\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ziter\AndroidStudioProjects\dante\dan\FallersApp\app\src\main\AndroidManifest.xml
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-gcm:11.0.2] C:\Users\ziter\.android\build-cache\40e68b6ed2ab504ac798e74fd5cbd2d5d27b266d\output\AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:11.0.2] C:\Users\ziter\.android\build-cache\1a8e1ef11195bea2178ae17eae7fbb7c29774aa7\output\AndroidManifest.xml:20:5-81
+MERGED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from [com.google.android.gms:play-services-gcm:11.0.2] C:\Users\ziter\.android\build-cache\40e68b6ed2ab504ac798e74fd5cbd2d5d27b266d\output\AndroidManifest.xml:20:22-79
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:11.0.2] C:\Users\ziter\.android\build-cache\378e2b4383dcb89ffc5ae2f4fb63ee83ed0c1a31\output\AndroidManifest.xml:19:5-78
+MERGED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] C:\Users\ziter\.android\build-cache\ae6ed6d516d12bf8948690383088583a83b1d441\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:11.0.2] C:\Users\ziter\.android\build-cache\378e2b4383dcb89ffc5ae2f4fb63ee83ed0c1a31\output\AndroidManifest.xml:19:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:11.0.2] C:\Users\ziter\.android\build-cache\378e2b4383dcb89ffc5ae2f4fb63ee83ed0c1a31\output\AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:11.0.2] C:\Users\ziter\.android\build-cache\378e2b4383dcb89ffc5ae2f4fb63ee83ed0c1a31\output\AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:11.0.2] C:\Users\ziter\.android\build-cache\378e2b4383dcb89ffc5ae2f4fb63ee83ed0c1a31\output\AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\ziter\.android\build-cache\53c55efc7dfdec91f6b982f8dd1e5ff0004d5de0\output\AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\ziter\.android\build-cache\53c55efc7dfdec91f6b982f8dd1e5ff0004d5de0\output\AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\ziter\.android\build-cache\53c55efc7dfdec91f6b982f8dd1e5ff0004d5de0\output\AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\ziter\.android\build-cache\53c55efc7dfdec91f6b982f8dd1e5ff0004d5de0\output\AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\ziter\.android\build-cache\53c55efc7dfdec91f6b982f8dd1e5ff0004d5de0\output\AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\ziter\.android\build-cache\53c55efc7dfdec91f6b982f8dd1e5ff0004d5de0\output\AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\ziter\.android\build-cache\53c55efc7dfdec91f6b982f8dd1e5ff0004d5de0\output\AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\ziter\.android\build-cache\53c55efc7dfdec91f6b982f8dd1e5ff0004d5de0\output\AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\ziter\.android\build-cache\53c55efc7dfdec91f6b982f8dd1e5ff0004d5de0\output\AndroidManifest.xml:24:18-63
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.0.2] C:\Users\ziter\.android\build-cache\1127fc8bd7c9fc26803aad5e20b767e777ad8ab6\output\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.0.2] C:\Users\ziter\.android\build-cache\1127fc8bd7c9fc26803aad5e20b767e777ad8ab6\output\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.0.2] C:\Users\ziter\.android\build-cache\1127fc8bd7c9fc26803aad5e20b767e777ad8ab6\output\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.0.2] C:\Users\ziter\.android\build-cache\1127fc8bd7c9fc26803aad5e20b767e777ad8ab6\output\AndroidManifest.xml:19:19-85
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] C:\Users\ziter\.android\build-cache\ae6ed6d516d12bf8948690383088583a83b1d441\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:22:22-65
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] C:\Users\ziter\.android\build-cache\ae6ed6d516d12bf8948690383088583a83b1d441\output\AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:27:162-184
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:27:185-208
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:27:17-104
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] C:\Users\ziter\.android\build-cache\ae6ed6d516d12bf8948690383088583a83b1d441\output\AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:32:16-87
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:33:7-197
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:33:148-170
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:33:171-195
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:33:91-147
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\ziter\.android\build-cache\d8575bf6772fcae0b9bb28feec4242effa59fbd7\output\AndroidManifest.xml:33:16-90
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:24:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:26:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:30:9-35:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:30:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:31:13-34:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:32:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:32:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:33:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:33:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:39:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:39:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:39:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:43:9-47:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:43:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:43:18-82
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:44:13-46:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:44:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:45:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\ziter\.android\build-cache\5613f0e89368671f6b8b28473c79d294f157dfd7\output\AndroidManifest.xml:45:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:11.0.2] C:\Users\ziter\.android\build-cache\4dc4b593b09ddfc77cb53a35a5977a57bd065d5a\output\AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:11.0.2] C:\Users\ziter\.android\build-cache\4dc4b593b09ddfc77cb53a35a5977a57bd065d5a\output\AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:11.0.2] C:\Users\ziter\.android\build-cache\4dc4b593b09ddfc77cb53a35a5977a57bd065d5a\output\AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:11.0.2] C:\Users\ziter\.android\build-cache\4dc4b593b09ddfc77cb53a35a5977a57bd065d5a\output\AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:11.0.2] C:\Users\ziter\.android\build-cache\4dc4b593b09ddfc77cb53a35a5977a57bd065d5a\output\AndroidManifest.xml:6:79-143
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.0.2] C:\Users\ziter\.android\build-cache\c947215e0834ce48154b80ccbed099bb9aa310b1\output\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.0.2] C:\Users\ziter\.android\build-cache\c947215e0834ce48154b80ccbed099bb9aa310b1\output\AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.0.2] C:\Users\ziter\.android\build-cache\c947215e0834ce48154b80ccbed099bb9aa310b1\output\AndroidManifest.xml:20:20-65
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\e98da5374e1c5b84396b9a510d2e16bf9e52cb67\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\ee69191a58de939521e5404bff83e2f46a5392c0\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\7302d1411ff25364e66e21ac8188cc78b080110c\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\dd253018c1b0b8f3ed4097383799b056d5225e90\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\dfd37f9d850d6543e05aba04d168c2a3e68f2d5a\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\09d124e7c0dbe94395a790159087ed1152d159a0\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\b7e351b5239d602f544e3fff59123bbd6bebc70f\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\dc6b778dd01137c7e6d35ab0bcca1afe4e770e25\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\993f8023f6437f6b29ce49b02ebd5ad3b6901ab7\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\45dd79fa197b5d5bbd3339afea0dd4520c640c5f\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\81037811e0b0dc2f210c593c8e3f65089760e88b\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\917945a59ac741ec3e258220c739df5f5f9d1032\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\33c3745fd27c5ef1a2992591bd2e62ccd8c7f7ff\output\AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\e98da5374e1c5b84396b9a510d2e16bf9e52cb67\output\AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\ziter\.android\build-cache\e98da5374e1c5b84396b9a510d2e16bf9e52cb67\output\AndroidManifest.xml:26:9-47

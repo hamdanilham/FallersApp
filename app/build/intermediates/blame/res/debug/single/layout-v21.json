@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\dfd37f9d850d6543e05aba04d168c2a3e68f2d5a\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\dfd37f9d850d6543e05aba04d168c2a3e68f2d5a\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\be9f5d745f20dea5f2bdad33160a41278c60af8f\\output\\res\\layout-v21\\place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\dfd37f9d850d6543e05aba04d168c2a3e68f2d5a\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\dfd37f9d850d6543e05aba04d168c2a3e68f2d5a\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    }
+]

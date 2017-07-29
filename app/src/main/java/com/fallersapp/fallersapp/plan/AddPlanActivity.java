@@ -10,11 +10,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,14 +45,20 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import static android.R.id.list;
+
 /**
  * Created by hamda on 13/07/2017.
  */
 
-public class AddPlanActivity extends BaseActivity implements DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener{
+public class AddPlanActivity extends BaseActivity implements DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener,AdapterView.OnItemSelectedListener, ListItemAdapter.OnClickInAdapter{
 
     public static final String DATEPICKER_TAG = "datepicker";
     public static final String TIMEPICKER_TAG = "timepicker";
+
+    private Integer THRESHOLD = 2;
+    private DelayAutoCompleteTextView geo_autocomplete;
+//    private ImageView geo_autocomplete_clear;
 
     @BindView(R.id.btn_add)
     Button buttonAdd;
@@ -69,6 +81,9 @@ public class AddPlanActivity extends BaseActivity implements DatePickerDialog.On
     @BindView(R.id.enter)
     ImageView imageViewEnter;
 
+    @BindView(R.id.spinner_family)
+    Spinner spinnerFamily;
+
     int yearDept, yearArr, mYear = 1985;
     int monthDept, monthArr;
     int dayDept, dayArr;
@@ -77,6 +92,8 @@ public class AddPlanActivity extends BaseActivity implements DatePickerDialog.On
     String item;
 
     List<ListItem> itemArrayList = new ArrayList<>();
+    List<ListItem> ItemList;
+    List<String> itemFamily;
     ListItemAdapter listItemAdapter;
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -87,21 +104,70 @@ public class AddPlanActivity extends BaseActivity implements DatePickerDialog.On
         ButterKnife.bind(this);
         setToolbar(true);
 
+//        geo_autocomplete_clear = (ImageView) findViewById(R.id.geo_autocomplete_clear);
 
-//        mAdapter = new ListItemAdapter(itemArrayList);
+//        geo_autocomplete = (DelayAutoCompleteTextView) findViewById(R.id.geo_autocomplete);
+//        geo_autocomplete.setThreshold(THRESHOLD);
+//        geo_autocomplete.setAdapter(new GeoAutoCompleteAdapter(this)); // 'this' is Activity instance
+//        geo_autocomplete.setLoadingIndicator(
+//                (android.widget.ProgressBar) findViewById(R.id.pb_loading_indicator));
+//
+//        geo_autocomplete.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+//                GeoSearchResult result = (GeoSearchResult) adapterView.getItemAtPosition(position);
+//                geo_autocomplete.setText(result.getAddress());
+//            }
+//        });
+//        geo_autocomplete.addTextChangedListener(new TextWatcher() {
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//
+//            }
+//
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//                if (s.length() > 0) {
+//                    .setVisibility(View.VISIBLE);
+//                } else {
+//                    geo_autocomplete_clear.setVisibility(View.GONE);
+//                }
+//            }
+//        });
+
+//        geo_autocomplete_clear.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v) {
+//                // TODO Auto-generated method stub
+//                geo_autocomplete.setText("");
+//            }
+//        });
+
+        spinnerFamily.setOnItemSelectedListener(this);
+        itemFamily = new ArrayList<String>();
+        itemFamily.add("A Family's");
+        itemFamily.add("B Family's");
+        itemFamily.add("C Family's");
+        itemFamily.add("D Family's");
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, R.layout.spinner_style, itemFamily);
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerFamily.setAdapter(dataAdapter);
+
 
         //recycle view
         listItemAdapter = new ListItemAdapter(this, itemArrayList);
         recyclerViewPlan.setLayoutManager(new LinearLayoutManager(this));
         recyclerViewPlan.setAdapter(listItemAdapter);
+
 //        recyclerViewPlan.setHasFixedSize(true);
 //        recyclerViewPlan.setItemAnimator(new DefaultItemAnimator());
 
-        List<ListItem> ItemList = new ArrayList<>();
-        ItemList.add(new ListItem("Bag"));
-
-        itemArrayList.addAll(ItemList);
-        listItemAdapter.notifyDataSetChanged();
+        ItemList = new ArrayList<>();
 
         //date picker
         final Calendar calendar = Calendar.getInstance();
@@ -137,24 +203,17 @@ public class AddPlanActivity extends BaseActivity implements DatePickerDialog.On
         imageViewEnter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                item = editTextListItem.getText().toString();
+                item = editTextListItem.getText().toString();
 
-//                itemArrayList.add(new mListBarang(item));
-//                ListItem listItem = new ListItem(item);
-//                itemArrayList.add(listItem);
-//
-//                editTextListItem.setText(null);
+                ItemList.add(new ListItem(item));
+
+                itemArrayList.addAll(ItemList);
+                listItemAdapter.notifyDataSetChanged();
+
+                ItemList.clear();
+                editTextListItem.setText(null);
             }
         });
-
-//        findViewById(R.id.timeButton).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                timePickerDialog.setVibrate(isVibrate());
-//                timePickerDialog.setCloseOnSingleTapMinute(isCloseOnSingleTapMinute());
-//                timePickerDialog.show(getSupportFragmentManager(), TIMEPICKER_TAG);
-//            }
-//        });
 
         if (saveInstanceState != null) {
             DatePickerDialog dpd = (DatePickerDialog) getSupportFragmentManager().findFragmentByTag(DATEPICKER_TAG);
@@ -167,17 +226,6 @@ public class AddPlanActivity extends BaseActivity implements DatePickerDialog.On
                 tpd.setOnTimeSetListener(this);
             }
         }
-
-//        editTextDepTime.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                DatePickerBuilder dpb = new DatePickerBuilder()
-//                        .setFragmentManager(getSupportFragmentManager())
-//                        .setStyleResId(R.style.BetterPickersDialogFragment)
-//                        .setYearOptional(true);
-//                dpb.show();
-//            }
-//        });
 
         textLocation.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -250,5 +298,23 @@ public class AddPlanActivity extends BaseActivity implements DatePickerDialog.On
     @Override
     public void onTimeSet(RadialPickerLayout view, int hourOfDay, int minute) {
         Toast.makeText(AddPlanActivity.this, "new time:" + hourOfDay + "-" + minute, Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        Toast.makeText(parent.getContext(),
+                "OnItemSelectedListener : " + parent.getItemAtPosition(position).toString(),
+                Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
+    }
+
+    @Override
+    public void onClickInAdapter(int content) {
+        itemArrayList.remove(content);
+        listItemAdapter.notifyDataSetChanged();
     }
 }

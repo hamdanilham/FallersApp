@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\radial_time_picker_dialog.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\layout-land\\radial_time_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\expiration_picker_dialog.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\layout-land\\expiration_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\time_picker_dialog.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\layout-land\\time_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\number_picker_dialog.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\layout-land\\number_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\calendar_date_picker_dialog.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\layout-land\\calendar_date_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\hms_picker_dialog.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\layout-land\\hms_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ziter\\AndroidStudioProjects\\dante\\dan\\FallersApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\date_picker_dialog.xml",
+        "source": "C:\\Users\\ziter\\.android\\build-cache\\4e5b7cee893b7bfa7d663b70faf8046e2f0fc253\\output\\res\\layout-land\\date_picker_dialog.xml"
+    }
+]
